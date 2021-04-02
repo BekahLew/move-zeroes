@@ -1,4 +1,4 @@
-const moveZeroes = arr => {
+const moveZeros = arr => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
       arr.push(arr[i]);
@@ -8,6 +8,4 @@ const moveZeroes = arr => {
   return arr;
 };
 
-console.log(moveZeroes([1, 0, 3, 0, 5, null, false, [], "r"]));
-
-export default moveZeroes;
+module.exports = moveZeros;
